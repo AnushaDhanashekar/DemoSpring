@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="dev" class="org.anusha.Dev" autowire="byType">
+        <!--<property name="comp" ref="lap1"></property>-->
+        <!--<property name="comp" ref="comp"></property>-->
+    </bean>
+    <!--<bean id="dev1" class="org.anusha.Dev">
+    </bean>-->
+    <bean id="desk1" class="org.anusha.Desktop" primary="true"></bean>
+    <!--<bean id="lap1" class="org.anusha.Laptop"></bean>-->
+    <bean id="comp" class="org.anusha.Laptop"></bean>
+
+</beans>
